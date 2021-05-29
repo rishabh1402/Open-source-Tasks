@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <a href="images/big.png">City Guide icon by Icons8</a> -->
+</head>
+<body>
+    <section class="back">
+        <nav>
+            <div class="header"><a href=>NATURE SAFE</a></div>
+            
+            <div class="nav-links" id="navlinks">
+               <div class="btn"><i  class="fa fa-close" onclick="hidemenu()" ></i></div> 
+                   <ul>
+                       <li><a href="aboutus.html"></i>About Us</a></li>
+                       
+                       <li><a href="contactus">Contact us</a></li>
+                   </ul>
+            </div>
+            <div class="btn btn1"><i  class="fa fa-bars" onclick="showmenu()"></i></div>
+        </nav>
+    </section>
+ 
+    <section class="issues">
+        <h1>Join Us </h1>
+        <p>Help us, Save this Beautiful Planet by defeating these devils </p>
+        <div class="places">
+        <div class="box b">
+            <a href=""><img src="images/2.jpg" alt="">
+            <div class="centered">Climate Crisis </div>  </a>
+        </div>
+        <div class="box">
+            <a href=""> <img src="images/1.jpg" alt="">
+            <div class="centered">Pollution</div></a>
+        </div>
+        <div class="box">
+           <a href=""> <img src="images/3.jpg" alt="">
+            <div class="centered">Deforestation</div></a>
+        </div>
+        <div class="box">
+            <a href=""> <img src="images/4.jpg" alt="">
+             <div class="centered">Overpopulation</div></a>
+         </div>
+    </div>
+    </section>
+
+    <section class="issues1">
+        <h1>How Do We Do It </h1>
+        <p>We follow both Digital and Traditional Ways to Spread Awareness to Bring About a Change </p>
+        <div class="places">
+        <div class="box b">
+            <a href=""><img src="images/5.jpg" alt="">
+            <div class="centered">Rallies </div>  </a>
+        </div>
+        <div class="box">
+            <a href=""> <img src="images/6.jpg" alt="">
+            <div class="centered">Institutional Visits</div></a>
+        </div>
+        <div class="box">
+           <a href=""> <img src="images/7.png" alt="">
+            <div class="centered">Conducting Competitons for Ideas</div></a>
+        </div>
+        <div class="box">
+            <a href=""> <img src="images/8.jpg" alt="">
+             <div class="centered">Video Conferencing </div></a>
+         </div>
+    </div>
+    </section>
+    <section class="con">
+        <h1>Contact us</h1>
+        <div id="con">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+        </div>
+    </section>
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showmenu(){
+            navlinks.style.right = "0"
+        }
+        function hidemenu(){
+            navlinks.style.right = "-210px"
+        }
+    </script>
+
+</body>
+</html>
