@@ -93,6 +93,16 @@ nav {
 	color: white;
 	margin: 30px 0px 0px 30px;
 }
+.rive 
+{
+    align-items: center;
+}
+.rive h1
+{
+	margin-left: 65px;
+	font-size: 22px;
+	color: #585772;
+}
 
 .cover {
 	flex: 1;
