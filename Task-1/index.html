@@ -44,6 +44,20 @@
 						<button class="cta-add">Add To Cart</button>
 					</div>
 				</div>
+				<div class="rive">
+					<canvas id="canvas"></canvas>
+					<script src="https://unpkg.com/rive-js@0.7.6/dist/rive.min.js"></script>
+					<script>
+					  // autoplays the first animation in the default artboard
+					  new rive.Rive({
+						src: 'https://public.rive.app/community/runtime-files/772-1537-check-icon.riv',
+						canvas: document.getElementById('canvas'),
+						autoplay: true,
+						layout: new rive.Layout({fit: 'contain', alignment: 'center'}),
+					  })
+					</script>
+					<h1>Verified Product</h1>
+				</div>
 				<div class="cover">
 					<img src="images/matebook.png" alt="matebook" />
 				</div>
