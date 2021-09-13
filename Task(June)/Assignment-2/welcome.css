@@ -1,0 +1,40 @@
+ *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background:url(https://i.pinimg.com/originals/53/c8/09/53c8094f4315f17faa57843d9b680222.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        section{
+            transform: translateY(200px);
+            font-family: "Maiandra GD";
+        }
+        span{
+            font-size: 65px;
+            color: tomato;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+        .success{
+            font-size: 30px;
+            color:wheat;
+            padding: 10px;
+        }
+        .btn{
+            margin-top: 20px;
+           margin-bottom: 20px;
+           width: 150px;
+           border: 1px solid whitesmoke;
+           border-radius: 5px;
+           text-align: center;
+           padding: 8px;
+        }
+        .btn:hover{
+                 background-color: blue;
+                 color: white;
+       }
