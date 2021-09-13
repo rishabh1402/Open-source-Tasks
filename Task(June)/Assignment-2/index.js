@@ -1,56 +1,38 @@
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+const firebaseConfig = {
+  apiKey: "AIzaSyC_nKG5UUGpMRvlH_xo1OYVYUkLSc0YW7s",
+  authDomain: "web-login-50d88.firebaseapp.com",
+  projectId: "web-login-50d88",
+  storageBucket: "web-login-50d88.appspot.com",
+  messagingSenderId: "144708372281",
+  appId: "1:144708372281:web:e37318ec33e12bb531cae8"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
-document.getElementById("loginForm").addEventListener("submit",(event)=>{
-    event.preventDefault()
-})
-const auth = getAuth();
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
-    location.replace("welcome.html")
-    // ...
-  } else {
-    // User is signed out
-    // ...
-  }
-});
-function login()
-{
-const auth = getAuth();
-const email = document.getElementById("email").value
-const password = document.getElementById("password").value
-signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    document.getElementById("error").innerHTML = error.message
-  });
+
+function login() {
+  const email = document.getElementById("email").value
+  const password = document.getElementById("password").value
+  firebase.auth().signInWithEmailAndPassword(email, password)
+      .catch((error) => {
+          alert("Enter Correct details!!")
+      })
 }
 
-function signUp()
-{
-const auth = getAuth();
-const email = document.getElementById("email").value
-const password = document.getElementById("password").value
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    document.getElementById("error").innerHTML = error.message
-    // ..
-  });
+firebase.auth().onAuthStateChanged((user) => {
+  if (user != null) {
+      location.replace("welcome.html")
+  }
+})
+
+
+function signup(){
+  const email = document.getElementById("email").value
+  const password = document.getElementById("password").value
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+      .catch((error) => {
+          alert("Enter correct details!!")
+          
+      });
 }
