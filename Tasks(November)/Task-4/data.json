@@ -1,44 +1,44 @@
 {
     "Questions": [
       {
-        "Quiz": "Q.1) What does HTML stand for?",
-        "option1": "Hyper Type Markup Language",
-        "option2": "Home Tool Markup Language",
-        "option3": "Hyper Link and Text Markup Language",
-        "option4": "Hyper Text Markup Language",
-        "answer": "Hyper Text Markup Language"
+        "Quiz": "Q.1)  Which one of the following river flows between Vindhyan and Satpura ranges?",
+        "option1": "Narmada",
+        "option2": "Netravati",
+        "option3": "Mahanadi",
+        "option4": "Son",
+        "answer": "Narmada"
       },
       {
-        "Quiz": "Q.2) What does CSS stand for?",
-        "option1": "Colorful Style Sheets",
-        "option2": "Computer Style Sheets",
-        "option3": "Creative Style Sheets",
-        "option4": "Cascading Style Sheets",
-        "answer": "Cascading Style Sheets"
+        "Quiz": "Q.2)  The hottest planet in the solar system?",
+        "option1": "Mercury",
+        "option2": "Venus",
+        "option3": "Mars",
+        "option4": "Jupiter",
+        "answer": "Venus"
       },
       {
-        "Quiz": "Q.3) Which HTML attribute is used to define inline styles?",
-        "option1": "Style",
-        "option2": "Font",
-        "option3": "Class",
-        "option4": "Styles",
-        "answer": "Style"
+        "Quiz": "Q.3) Which one of the following ports is the oldest port in India?",
+        "option1": "Mumbai Port",
+        "option2": "Kolkata Port",
+        "option3": "Chennai Port",
+        "option4": "Vishakhapatnam Port",
+        "answer": "Chennai Port"
       },
       {
-        "Quiz": "Q.4) Which is the correct CSS syntax?",
-        "option1": "body:color=black;",
-        "option2": "{body:color=black;}",
-        "option3": "body{color:black;}",
-        "option4": "{body;color:black;}",
-        "answer": "body{color:black;}"
+        "Quiz": "Q.4)Galileo was an Italian astronomer who: ",
+        "option1": "developed the telescope",
+        "option2": "discovered four satellites of Jupiter",
+        "option3": "discovered that the movement of pendulum produces a regular time measurement",
+        "option4": "All of the above",
+        "answer": "All of the above"
       },
       {
-        "Quiz": "Q.5) What is the correct HTML tag for playing video files?",
-        "option1": "media",
-        "option2": "movie",
-        "option3": "video",
-        "option4": "mp4",
-        "answer": "video"
+        "Quiz": "Q.5) The United Nations Organization has its Headquarters at: ",
+        "option1": "Bali",
+        "option2": "Washington DC",
+        "option3": "New York, USA",
+        "option4": "Hague",
+        "answer": "New York, USA"
       }
     ]
   }
