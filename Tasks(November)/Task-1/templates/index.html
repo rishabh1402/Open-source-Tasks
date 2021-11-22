@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Django Dictionary</title>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="{% static 'theme-1.css' %}">
+	<style>
+	 body{
+       width: 100%;
+       height: 100%;
+	   background: linear-gradient(-45deg, #ee7752, #e73c76,#23a6d5,#23d5ab);
+       animation: change 10s ease-in-out infinite;
+       padding: 120 auto;  
+     }
+	</style>
+
+</head> 
+
+<body>
+    
+   <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Django Dictionary</a>
+        
+    </div>
+    </nav>
+	 <div class="container my-5">
+    <h1 class="text-center text-muted">
+        Django Dictionary
+    </h1>
+    <div class="row mt-5">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+            <form class="signup-form form-inline justify-content-center pt-3" action="search">
+                    <div class="form-group">
+					 <button type="submit" class="btn btn-primary">Search</button>
+                        <label class="sr-only" for="semail">Enter Your Word</label>
+                        <input type="text" id="semail" name="word" class="form-control mr-md-1 semail" placeholder="Enter Your Word">
+                    </div>
+                   
+				</form>
+				
+        </div>
+    </div>
+    </div>
+    
+			    
+
+		   
+	    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+				{% block content %}
+				{% endblock %}
+		    </div>
+	    </section>
+	    <br><br>
+	    
+    
+    
+    
+    
+ 
+</body>
+</html> 
