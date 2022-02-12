@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+       <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <img src="cog.png" alt="" height="150px">
+            <a class="navbar-brand" href="#"><h1>Cognizance</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+              </div>
+            </div>
+          </nav>
+       </div>
+      </div>
+      <table>
+        <tr>
+            <td>
+                <form class="form" autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Name</label><br />
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="age">Age</label><br />
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br />
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label><br />
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="skills">Skills</label><br />
+                        <input type="text" name="skills" id="skills">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Skills</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+      </table>
+      
+</body>
+</html>
